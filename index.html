@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Panels</title>
+    <link rel="web icon" href="src/images/cursor.png" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <main>
+      <hgroup class="titles">
+        <h1 class="title">
+          &Copf;&oopf;&nopf;&topf;&eopf;&nopf;&topf;
+          &popf;&aopf;&nopf;&eopf;&lopf;&sopf;
+        </h1>
+        <p class="title__text">Implemented with JQuery</p>
+      </hgroup>
+    </main>
+
+    <ul class="tab__list">
+      <li class="active">
+        <a href="#accordion" class="tab__control">Accordion </a>
+      </li>
+      <li><a href="#tabList" class="tab__control">Tab list </a></li>
+      <li><a href="#modalWindow" class="tab__control">Modal window </a></li>
+      <li><a href="#photoViewer" class="tab__control">Photo viewer</a></li>
+      <li><a href="#slider" class="tab__control">Slider</a></li>
+    </ul>
+    <div class="tab__content">
+      <div class="tab__panel active" id="accordion">
+        <h2 class="panel__title">Accordion</h2>
+        <ul class="accordion">
+          <li>
+            <button
+              class="accordion__control"
+              id="accordion-1"
+              data-bg="accordion-1"
+            >
+              <h3 class="accordion__title">Iura Shuu</h3>
+              <div class="accordion__arrow">
+                <img src="src/images/arrow.png" alt="arrow" />
+              </div>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__content">
+                <div class="accordion__img">
+                  <img src="src/images/picture1.jpg" alt="iura shuu" />
+                </div>
+                <div class="accordion__text">
+                  <h4 class="name">Shuu Iura</h4>
+                  <p>Age:17</p>
+                  <p>Family: Iura Motoko</p>
+                  <p>Role: classmate</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="accordion__control"
+              id="accordion-2"
+              data-bg="accordion-2"
+            >
+              <h3 class="accordion__title">Sengoku Kakeru</h3>
+              <div class="accordion__arrow">
+                <img src="src/images/arrow.png" alt="arrow" />
+              </div>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__content">
+                <div class="accordion__img">
+                  <img src="src/images/picture2.jpg" alt="sengoku kakeru" />
+                </div>
+                <div class="accordion__text">
+                  <h4 class="name">Kakeru Sengoku</h4>
+                  <p>Age:17</p>
+                  <p>
+                    Family: Takeru Sengoku(father), Remi Ayasaki(girlfriend)
+                  </p>
+                  <p>Role: classmate, the president of school parliament</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <button
+              class="accordion__control"
+              id="accordion-3"
+              data-bg="accordion-3"
+            >
+              <h3 class="accordion__title">Ishikawa Touru</h3>
+              <div class="accordion__arrow">
+                <img src="src/images/arrow.png" alt="arrow" />
+              </div>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__content">
+                <div class="accordion__img">
+                  <img src="src/images/picture4.jpg" alt="ishikawa touru" />
+                </div>
+                <div class="accordion__text">
+                  <h4 class="name">Tooru Ishikawa</h4>
+                  <p>Age:17</p>
+                  <p>Role: classmate</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- tab list -->
+      <div class="tab__panel smal-tab" id="tabList">
+        <h2 class="panel__title">Tab List</h2>
+        <ul class="tab__list">
+          <li class="active small-tab--active">
+            <a href="#tab-1" class="tab__control smal-tab__control">Hori</a>
+          </li>
+          <li>
+            <a href="#tab-2" class="tab__control smal-tab__control">Ayasaki</a>
+          </li>
+          <li>
+            <a href="#tab-3" class="tab__control smal-tab__control">Kona</a>
+          </li>
+          <li>
+            <a href="#tab-4" class="tab__control smal-tab__control">Yanagi</a>
+          </li>
+        </ul>
+
+        <div class="smal-tab__panels">
+          <div class="tab__panel active" id="tab-1" data-bg="accordion-7">
+            <div class="tab__content">
+              <div class="tab__img">
+                <img src="src/images/picture7.jpg" alt="Hori" />
+              </div>
+              <div class="tab__text">
+                <h4 class="tab__title">Kyouko Hori</h4>
+                <p>Role: main</p>
+                <p>
+                  Family:Yuriko Hori(mom) Kyousuke Hori(dad)<br />
+                  Souta Hori(young brother), Izumi Miyamura(boyfriend)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab__panel" id="tab-2" data-bg="accordion-5">
+            <div class="tab__content">
+              <div class="tab__img">
+                <img src="src/images/picture5.jpg" alt="ayasaki remi" />
+              </div>
+              <div class="tab__text">
+                <h4 class="tab__title">Remi Ayasaki</h4>
+                <p>Role: school friend, member of the school parliament</p>
+                <p>Family:Kakeru Sengoku(boyfriend)</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab__panel" id="tab-3" data-bg="accordion-6">
+            <div class="tab__content">
+              <div class="tab__img">
+                <img src="src/images/picture6.jpg" alt="sakura" />
+              </div>
+              <div class="tab__text">
+                <h4 class="tab__title">Sakura Kona</h4>
+                <p>Role: friend from school, member of the school parliament</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab__panel" id="tab-4" data-bg="accordion-4">
+            <div class="tab__content">
+              <div class="tab__img">
+                <img src="src/images/picture3.jpg" alt="yanagi" />
+              </div>
+              <div class="tab__text">
+                <h4 class="tab__title">Akane Yanagi</h4>
+                <p>Role: friend from school</p>
+                <p>
+                  Feature: blind and always forget to take glasses<br />Very
+                  polite <br />Impossible to wake up in the morning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal window -->
+      <div class="tab__panel" id="modalWindow">
+        <h2 class="panel__title">Modal Window</h2>
+        <button id="openModel">Open window</button>
+        <div class="overlay hiden"></div>
+        <div class="modal-window hiden">
+          <button class="closeButton">X</button>
+          <h3 class="modal-window__title">Modal Window</h3>
+          <div class="modal-window__text" data-bg="accordion-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            repellendus ratione temporibus optio quos iusto dolorum, cum quae
+            veritatis atque delectus voluptate, blanditiis voluptatem quibusdam
+            fugit, quidem unde incidunt eum.
+          </div>
+        </div>
+      </div>
+      <!-- photo viewer -->
+      <div class="tab__panel" id="photoViewer">
+        <h2 class="panel__title">Photo Viewer</h2>
+        <div class="photo-viewer__container">
+          <div class="photo-viewer" id="photo-viewer">
+            <img src="src/images/picture1.jpg" alt="Iura" id="viewImage" />
+          </div>
+          <div id="thumbnails">
+            <a
+              href="src/images/picture1.jpg"
+              class="thumb active"
+              title="Iura"
+              data-bg="accordion-1"
+              ><img src="src/images/picture1.jpg" alt="Iura"
+            /></a>
+            <a
+              href="src/images/picture2.jpg"
+              class="thumb"
+              title=" Kakeru"
+              data-bg="accordion-2"
+              ><img src="src/images/picture2.jpg" alt="Kakeru"
+            /></a>
+            <a
+              href="src/images/picture3.jpg"
+              class="thumb"
+              title=" Akane"
+              data-bg="accordion-4"
+              ><img src="src/images/picture3.jpg" alt="Akane"
+            /></a>
+            <a
+              href="src/images/picture4.jpg"
+              class="thumb"
+              title=" Touru"
+              data-bg="accordion-3"
+              ><img src="src/images/picture4.jpg" alt="Touru"
+            /></a>
+            <a
+              href="src/images/picture5.jpg"
+              class="thumb"
+              title=" Remi"
+              data-bg="accordion-5"
+              ><img src="src/images/picture5.jpg" alt="Remi"
+            /></a>
+            <a
+              href="src/images/picture6.jpg"
+              class="thumb"
+              title=" Sakura"
+              data-bg="accordion-6"
+              ><img src="src/images/picture6.jpg" alt="Sakura"
+            /></a>
+            <a
+              href="src/images/picture7.jpg"
+              class="thumb"
+              title=" Kyoko"
+              data-bg="accordion-7"
+              ><img src="src/images/picture7.jpg" alt="Kyoko"
+            /></a>
+            <a
+              href="src/images/picture8.jpg"
+              class="thumb"
+              title=" Izumi"
+              data-bg="accordion-8"
+              ><img src="src/images/picture8.jpg" alt="Izumi"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+      <div class="tab__panel" id="slider">
+        <h2 class="panel__title">Slider</h2>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide" id="slide-1" data-bg="accordion-1">
+              <img src="src/images/picture1.jpg" alt="" />
+            </div>
+            <div class="slide active" id="slide-2" data-bg="accordion-2">
+              <img src="src/images/picture2.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-3" data-bg="accordion-4">
+              <img src="src/images/picture3.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-4" data-bg="accordion-3">
+              <img src="src/images/picture4.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-5" data-bg="accordion-5">
+              <img src="src/images/picture5.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-6" data-bg="accordion-6">
+              <img src="src/images/picture6.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-7" data-bg="accordion-7">
+              <img src="src/images/picture7.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide-8" data-bg="accordion-8">
+              <img src="src/images/picture8.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button" id="leftBtn">
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+            </button>
+            <button class="slider__button" id="rightBtn">
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </button>
+          </div>
+          <div class="slider__pages">
+            <a href="#" class="slider__page active"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+            <a href="#" class="slider__page"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="src/js/controller.js" type="module"></script>
+  </body>
+</html>
